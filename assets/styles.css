@@ -151,7 +151,7 @@ a:hover {
   position: relative;
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 76px 0 110px;
+  padding: clamp(42px, 7vh, 76px) 0 clamp(58px, 8vh, 92px);
   color: #fff;
 }
 
@@ -170,15 +170,19 @@ h3 {
 }
 
 h1 {
-  max-width: 820px;
+  max-width: 1040px;
   margin: 0;
-  font-size: clamp(2.35rem, 7vw, 5.4rem);
+  font-size: clamp(2.35rem, 4.8vw, 4.55rem);
+}
+
+.hero h1 {
+  line-height: 1.08;
 }
 
 .hero p {
-  max-width: 650px;
+  max-width: 760px;
   margin: 22px 0 0;
-  font-size: 1.2rem;
+  font-size: clamp(1.05rem, 1.4vw, 1.2rem);
   color: #eef8f7;
 }
 
