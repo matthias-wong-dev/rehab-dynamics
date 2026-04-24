@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>满意度调查 | RehabDynamics 康复动力</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="主要导航"><a class="brand" href="index.html"><img src="../assets/images/logo.webp" alt="RehabDynamics 康复动力"></a><div class="menu"><a href="index.html">首页</a><a href="services.html">服务</a><a href="leaders.html">团队</a><a href="contact.html">联系</a><a href="referral.html">转介</a><a href="consent.html">同意书</a><a href="survey.html" aria-current="page">调查</a><a href="links.html">链接/FAQ</a><span class="language-toggle" aria-label="语言"><a href="survey.html" aria-current="true">中</a><a href="../survey.html">EN</a></span><a class="call-link" href="tel:0272280603">02 7228 0603</a></div></nav></header>
+  <main>
+    <section class="page-title"><div class="wrap"><p class="eyebrow">前端模拟表单</p><h1>服务满意度调查</h1><p>感谢您分享反馈。我们会用这些意见改善服务流程和沟通体验。</p></div></section>
+    <section class="section">
+      <div class="wrap">
+        <form class="form-panel form-grid" data-mock-form>
+          <div class="field"><label for="survey-first">名字（选填）</label><input id="survey-first"></div>
+          <div class="field"><label for="survey-last">姓氏（选填）</label><input id="survey-last"></div>
+          <div class="field"><label for="survey-email">电邮（选填）</label><input id="survey-email" type="email"></div>
+          <div class="field"><label for="service-type">您接受了哪类服务？ *</label><select id="service-type" required><option value="">请选择</option><option>Workers Compensation Rehabilitation</option><option>CTP Rehabilitation</option><option>NDIS</option><option>Support At Home</option><option>其他</option></select></div>
+          <fieldset class="field full"><legend>您对服务的满意程度？ *</legend><div class="rating"><label><input name="sat" type="radio" required><span>1</span></label><label><input name="sat" type="radio"><span>2</span></label><label><input name="sat" type="radio"><span>3</span></label><label><input name="sat" type="radio"><span>4</span></label><label><input name="sat" type="radio"><span>5</span></label></div></fieldset>
+          <fieldset class="field full"><legend>您有多大可能推荐 RehabDynamics 给其他人？ *</legend><div class="rating"><label><input name="recommend" type="radio" required><span>1</span></label><label><input name="recommend" type="radio"><span>2</span></label><label><input name="recommend" type="radio"><span>3</span></label><label><input name="recommend" type="radio"><span>4</span></label><label><input name="recommend" type="radio"><span>5</span></label></div></fieldset>
+          <div class="field full"><label for="feedback">意见或建议</label><textarea id="feedback"></textarea></div>
+          <div class="field"><label for="consultant">顾问/治疗师姓名（选填）</label><input id="consultant"></div>
+          <div class="field"><label for="period">服务期间</label><input id="period" placeholder="月/年 至 月/年"></div>
+          <button class="button" type="submit">提交反馈</button>
+          <div class="notice full" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-grid"><div><img src="../assets/images/logo.webp" alt="RehabDynamics 康复动力"></div><div><strong>Parramatta 办公室</strong><p>Suite 510, B1 Tower<br>118 Church Street Parramatta<br>PO Box W96, Parramatta Westfield, NSW 2150</p></div><div><strong>联系</strong><p><a href="tel:0272280603">02 7228 0603</a><br><a href="mailto:admin@rehabdynamics.com.au">admin@rehabdynamics.com.au</a></p></div></div><div class="wrap fineprint">RehabDynamics © <span data-year></span></div></footer>
+  <script src="../assets/app.js"></script>
+</body>
+</html>
